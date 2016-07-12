@@ -21,7 +21,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
+        //Identification of History TableView cell
         let CellID = "History"
         
         let cell = tableView.dequeueReusableCellWithIdentifier(CellID, forIndexPath: indexPath)
