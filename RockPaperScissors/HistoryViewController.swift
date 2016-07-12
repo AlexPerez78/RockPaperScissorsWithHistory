@@ -28,13 +28,17 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         let match = self.history[indexPath.row]
         
+        //Text
         cell.textLabel!.text = victoryStatusDescription(match)
+        
+        //Detail
         cell.detailTextLabel!.text = "\(match.p1) vs. \(match.p2)"
         
         
         return cell
     }
     
+    //Displays if the user won or losr the match
     func victoryStatusDescription(match: RPSMatch) -> String {
         
         if (match.p1 == match.p2) {
@@ -45,7 +49,8 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
             return "Loss."
         }
     }
-
+    
+    //Dismiss History View Controller on OK
     @IBAction func dismissHistory(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
