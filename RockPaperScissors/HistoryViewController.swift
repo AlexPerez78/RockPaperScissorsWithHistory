@@ -22,7 +22,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let CellID = "HistoryCell"
+        let CellID = "History"
         
         let cell = tableView.dequeueReusableCellWithIdentifier(CellID, forIndexPath: indexPath)
         
