@@ -24,6 +24,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         //Identification of History TableView cell
         let CellID = "History"
         
+        //Stored in dequeueResuableCell
         let cell = tableView.dequeueReusableCellWithIdentifier(CellID, forIndexPath: indexPath)
         
         let match = self.history[indexPath.row]
